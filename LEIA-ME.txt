@@ -1,0 +1,22 @@
+OPTIMIZER VIP — V13 iOS Edition | SANTX SENSI
+
+PUBLICAÇÃO NO GITHUB PAGES
+1. Extraia o ZIP. Entre na pasta Optimizer-VIP-iOS-V13.
+2. Crie um repositório no GitHub (ex.: optimizer-vip). Envie o conteúdo da pasta para a raiz do repositório, incluindo a pasta icons. Não envie apenas o ZIP.
+3. No repositório, abra Settings > Pages. Em Build and deployment, selecione Deploy from a branch, main e / (root), depois Save.
+4. Após a publicação, abra o endereço HTTPS informado em Pages.
+5. No iPhone, abra o endereço no Safari. Toque em Compartilhar > Adicionar à Tela de Início. Ative Abrir como App da Web, caso essa opção apareça, e toque em Adicionar.
+
+O ícone da tela inicial é a arte fornecida, sem alteração de composição. O nome é Optimizer VIP.
+A primeira abertura necessita de internet para carregar a página e preparar o cache. O modo offline depende do armazenamento do navegador e da conclusão do cache. Se necessário, abra o app online novamente.
+
+ARQUIVOS
+index.html: interface, CSS e JavaScript integrados, reconstruídos a partir do código V13 da conversa.
+manifest.webmanifest: nome, ícones e modo independente.
+sw.js: cache offline, com atualização por versão.
+icons/: PNGs nas dimensões 32, 180, 192, 512 e 1024 px.
+.nojekyll: evita processamento Jekyll no GitHub Pages.
+
+ESCOPO
+Este pacote é um aplicativo web instalável (PWA), não um IPA nativo. As sete funções e seis opções bônus registram preferências localmente. O seletor de 30, 60 e 120 FPS registra metas, não altera o FPS real nem modifica outros aplicativos ou configurações protegidas do iOS. As seleções anteriores são migradas quando a origem e o armazenamento são os mesmos. A troca de endereço ou a limpeza de dados pode remover seleções salvas. Não inclui autenticação nem licença por servidor.
+Para publicar uma atualização, mantenha o endereço e incremente a versão CACHE em sw.js. Teste em um iPhone antes de distribuir.
